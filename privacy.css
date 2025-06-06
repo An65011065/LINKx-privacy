@@ -111,22 +111,12 @@ body {
     padding: 30px;
     margin-bottom: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-}
-
-.privacy-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .privacy-card.highlight {
     background: linear-gradient(135deg, #4285f4 0%, #667eea 100%);
     color: white;
     border: none;
-}
-
-.privacy-card.highlight strong {
-    color: white;
 }
 
 .privacy-card h3 {
@@ -237,7 +227,6 @@ body {
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
-    transition: all 0.3s ease;
     min-width: 150px;
 }
 
@@ -246,32 +235,14 @@ body {
     color: white;
 }
 
-.action-btn.primary:hover {
-    background: #3367d6;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(66, 133, 244, 0.3);
-}
-
 .action-btn.secondary {
     background: #6c757d;
     color: white;
 }
 
-.action-btn.secondary:hover {
-    background: #5a6268;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(108, 117, 125, 0.3);
-}
-
 .action-btn.danger {
     background: #dc3545;
     color: white;
-}
-
-.action-btn.danger:hover {
-    background: #c82333;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(220, 53, 69, 0.3);
 }
 
 /* Footer */
@@ -376,26 +347,7 @@ html {
     }
 }
 
-/* Loading animation for interactive elements */
+/* Remove loading animation for interactive elements */
 .action-btn {
     position: relative;
-    overflow: hidden;
-}
-
-.action-btn::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
-    transform: translate(-50%, -50%);
-    transition: width 0.6s, height 0.6s;
-}
-
-.action-btn:active::after {
-    width: 300px;
-    height: 300px;
 }
